@@ -1,0 +1,13 @@
+.char {
+  border: 1px solid black;
+
+  h1,
+  p {
+    color: white;
+  }
+
+  p {
+    letter-spacing: 2px;
+    font-style: italic;
+  }
+}
