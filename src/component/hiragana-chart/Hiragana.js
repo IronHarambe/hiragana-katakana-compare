@@ -5,7 +5,6 @@ import "./Hiragana.scss";
 function Hiragana() {
   return (
     <div className="hiragana">
-      <h1>Hiragana Chart</h1>
       <div className="chart">
         <Char title="か" tag="wa"></Char>
         <Char title="ら" tag="ra"></Char>

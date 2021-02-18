@@ -1,17 +1,13 @@
-import  React from 'react'
+import React from "react";
 
-import './App.css';
-import Comparer from './component/Comparer';
-
+import "./App.css";
+import Comparer from "./component/Comparer";
 
 function App() {
   return (
     <div className="App">
-   <h1>Hiragana Katakana Toggler</h1>
-   <Comparer></Comparer>
-   
-  
-   
+      <h1>Hiragana Katakana Comparision</h1>
+      <Comparer></Comparer>
     </div>
   );
 }

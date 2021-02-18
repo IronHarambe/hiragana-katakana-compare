@@ -2,18 +2,20 @@ import React, { useState } from "react";
 import Hiragana from "./hiragana-chart/Hiragana";
 import Katakana from "./katakana-chart/Katakana";
 
+import "./Compare.scss";
+
 function Comparer() {
   const [toggle, setToggle] = useState(false);
 
   console.log(toggle);
 
   const compare =
-    toggle == false ? <Hiragana></Hiragana> : <Katakana></Katakana>;
+    toggle == true ? <Hiragana></Hiragana> : <Katakana></Katakana>;
 
   return (
-    <div>
-      <button onClick={() => setToggle(!toggle)}>
-        {toggle == false ? "Katakana" : "Hiragana"}
+    <div className="comparer">
+      <button className="btn" onClick={() => setToggle(!toggle)}>
+        <h2>{toggle == false ? "Katakana" : "Hiragana"}</h2>
       </button>
 
       <div>{compare}</div>

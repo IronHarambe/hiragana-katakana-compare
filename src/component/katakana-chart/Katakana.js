@@ -5,7 +5,6 @@ import "./Katakana.scss";
 function Katakana() {
   return (
     <div className="katakana">
-      <h1>Katakana Chart</h1>
       <div className="chart">
         <Char title="ワ" tag="wa"></Char>
         <Char title="ラ" tag="ra"></Char>
